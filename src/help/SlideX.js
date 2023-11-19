@@ -3,16 +3,16 @@ export const slideX = {
     spaceBetween:50,
     breakpoints:{
         480:{
-         slidesPerView:1
-        },
-        680:{
          slidesPerView:2
         },
-        780:{
+        680:{
          slidesPerView:3
         },
+        780:{
+         slidesPerView:4
+        },
         1180:{
-         slidesPerView:5
+         slidesPerView:6
         },
        }
 }
