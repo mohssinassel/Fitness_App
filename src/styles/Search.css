@@ -1,0 +1,80 @@
+.Search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    
+    border-radius: 5px;
+
+}
+.searchForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin-top: 20px;
+    /* background-color: aquamarine; */
+}
+.searchForm input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+.searchForm button{
+    width: 20%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.searchCategory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+
+}
+.custom-slide{
+    height: 140px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+  }
+  .logo-categ{
+    color: rgb(141, 28, 28);
+    background-color: white;
+    
+  }
+  .btn-categ{
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+  }
+  .btn-categ.active{
+    background-color: var(--second-color);
+  }
+  .custom-slide.active{
+    background-color: var(--second-color);
+  
+  }
