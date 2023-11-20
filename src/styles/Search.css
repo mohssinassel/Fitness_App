@@ -5,7 +5,6 @@
     align-items: center;
     width: 100%;
     margin-top: 30px;
-    
     border-radius: 5px;
     
 
@@ -64,6 +63,11 @@
     align-items: center;
     border-radius: 15px;
     border: #000000 solid 3px;
+  }
+.custom-slide:hover{
+    /* background-color: rgb(0, 0, 0); */
+    color: white;
+    border: #fff solid 3px;
   }
   .logo-categ{
     
@@ -160,3 +164,61 @@
     margin: 10px 0;
     text-align: center;
   }
+  .exercice div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .fav_logo{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+  }
+  .fav_logo.favorited {
+    color: #d64141; /* Change the color for favorited state */
+  }
+  
+  .bg__blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 60px white;
+    z-index: 1;
+  }
+  .search_blur{
+    left: 2rem;
+    top: 100rem;
+  }
+  .search_blur2{
+    right: 2rem;
+    top: 100rem;
+  }
+  .link{
+    text-decoration: none;
+  
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .exercices {
+      grid-template-columns: 1fr 1fr;
+    }
+
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .exercices {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .exercices {
+      grid-template-columns: 1fr;
+    }
+    .searchForm{
+      width: 80%;
+    }
+    .searchForm button{
+      font-size: 1rem;
+    }
+
+  }
+  

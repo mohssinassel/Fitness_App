@@ -13,13 +13,17 @@
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     color: rgb(0, 0, 0);
-    font-size: 2rem;
-    font-weight: 900;
-    text-align: center;
-   
+    font-size: 3rem;
+    margin-left: 50px;
+    /* font-weight: 900; */
+    /* text-align: center; */
+}
+.homeRight p{
+    font-size: 1rem;
+    color: rgb(219, 219, 219);
+    /* text-align: center; */
     
 }
 
@@ -37,3 +41,133 @@
     height: 100%;
     object-fit: cover;
 }
+.firstH1, .secondH1{
+    margin-bottom: 20px;
+    
+  }
+  
+.firstH1 span {
+color: transparent;
+font-family:  cursive;
+letter-spacing: 6px;
+-webkit-text-stroke: 2px rgb(255, 255, 255); /* Adjust the stroke size as needed */
+}
+
+.bg__blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 60px white;
+    z-index: 1;
+  }
+.first_blur{
+    top: 15rem; 
+    right: 50rem;
+}
+.header__blur {
+    bottom: 5rem;
+    right: 0;
+} 
+.let {
+    content: "LET'S";
+    position: absolute;
+    top: 3rem;  
+    left: 5rem;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.2;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+  }
+.do {
+    content: "DO";
+    position: absolute;
+    top: 10rem;  
+    right: 3rem;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.2;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+  }
+.it {
+    content: "IT";
+    position: absolute;
+    bottom: 3rem;  
+    right: 35rem;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.2;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .exercices {
+      grid-template-columns: 1fr 1fr;
+    }
+    .homeRight{
+        font-size: 2rem;
+    }
+    
+  }
+  @media only screen and (max-width: 1000px) {
+    .exercices {
+      grid-template-columns: 1fr 1fr;
+    }
+    .homeRight{
+        font-size: 1.5rem;
+    }
+    .homeLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .homeImg{
+        height: 60%;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .exercices {
+      grid-template-columns: 1fr;
+    }
+    .homeRight{
+        font-size: 1.2rem;
+        width: 100%;
+        align-items: center;
+        margin-left: 0px;
+        padding: 1rem;
+         
+    }
+    .homeRight p{
+        font-size: 0.7rem;
+    }
+    .homeImg{
+
+        height: 100%;
+    }
+    .homeLeft{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 5rem;
+        
+    }
+    .homeRight::before {
+        top: 3rem;  
+        left: 1rem;
+      }
+    .homeLeft::before {
+        top: 17rem;  
+        right: 0.5rem;
+    }
+    .home::before{
+        bottom: 5rem;  
+        left: 1rem;
+    }
+    .home{
+        flex-direction: column;
+        width: 100%;
+        height: 110vh;
+    }
+  }

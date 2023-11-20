@@ -1,0 +1,23 @@
+.footer{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 20px;
+    box-shadow: 20px 1px 10px rgba(255, 255, 255, 0.707);
+}
+.footer__logo{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+}
+.footer h2{
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+}
