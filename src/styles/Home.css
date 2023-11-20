@@ -120,10 +120,12 @@ letter-spacing: 6px;
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
     .homeImg{
         height: 60%;
+    }
+    .let,.do,.it{
+        display: none;
     }
     
   }
@@ -150,20 +152,7 @@ letter-spacing: 6px;
     .homeLeft{
         width: 100%;
         margin-left: 0px;
-        margin-top: 5rem;
-        
-    }
-    .homeRight::before {
-        top: 3rem;  
-        left: 1rem;
-      }
-    .homeLeft::before {
-        top: 17rem;  
-        right: 0.5rem;
-    }
-    .home::before{
-        bottom: 5rem;  
-        left: 1rem;
+        /* margin-top: 5rem; */
     }
     .home{
         flex-direction: column;

@@ -97,3 +97,48 @@
     font-family: 'Montserrat', sans-serif;
   }
 
+  @media only screen and (max-width: 1300px) {
+    
+
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    
+  }
+  @media only screen and (max-width: 400px) {
+    .detail{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2rem;
+
+        height: auto;
+    }
+    .bg__blur{
+        display: none;
+    }
+    .detail-info > p{
+        font-size: 0.7rem;
+        
+    }
+    .detail-image-container{
+        width: 100%;
+    }
+    .detail-info{
+        width: 100%;
+    }
+    .detail-info::before ,.detail::before {
+        display: none;
+    }
+    .detail-info > h1{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    .extra-detail-item{
+        gap: 1rem;
+    }
+    .extra-detail{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+}

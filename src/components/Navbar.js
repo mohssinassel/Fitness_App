@@ -20,7 +20,7 @@
         return (
             <div className={`navBar ${isMenuOpen ? 'open' : ''}`}>
                 <div className='navBarLeft'>
-                    <div className='logo'>GY<CgGym className='logoIcon'/>M</div>
+                    <NavLink to="/" style={{textDecoration:'none'}}><div className='logo'>GY<CgGym className='logoIcon'/>M</div></NavLink>
                     <div className={`navigation ${isMenuOpen ? 'open' : ''}`} >
                         <div><NavLink to="/" className="linkMenu" onClick={toggleMenu}>Home</NavLink><span></span><span></span><span></span><span></span></div>
                         <div><NavLink to="/exercises" className="linkMenu" onClick={toggleMenu}>Exercices</NavLink></div>

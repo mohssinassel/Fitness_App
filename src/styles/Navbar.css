@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0.3rem;
 }
 .navBarLeft{
     
@@ -54,7 +55,9 @@
 }
 .logo{
     display: flex;
+    text-decoration: none;
 }
+
 /* .linkMenu::before {
     content: '';
     position: absolute;
@@ -92,7 +95,7 @@
       position: absolute;
       background-color: #ffffff;
       color: black;
-      
+      padding: 20px 0;
     }
     .navigation.open a{
         border: none;

@@ -125,7 +125,7 @@ const Search = () => {
                 </Swiper>
             </div>
             <div>
-                <h1>Exercices</h1>
+                
                 <div className="exercices" data-aos="fade-up">
                     {displayExercices && favorites && displayExercices.map((exercice, index) => (
                         <div className="exercice" key={index} >

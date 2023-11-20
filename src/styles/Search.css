@@ -213,11 +213,14 @@
     .exercices {
       grid-template-columns: 1fr;
     }
+    .bg__blur{
+      display: none;
+    }
     .searchForm{
       width: 80%;
     }
     .searchForm button{
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
 
   }

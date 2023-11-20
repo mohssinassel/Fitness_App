@@ -2,7 +2,7 @@
       method: 'GET',
       params: {limit: 80},
       headers: {
-          'X-RapidAPI-Key': '9f4b25285fmsh1daeeac1d90ce34p1bfcb2jsnd63f59a19bc0',
+          'X-RapidAPI-Key': '96feb5c002mshbd99da14f41a7e4p1ae3d0jsna15e9df0abc7',
           'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
         }
   };
