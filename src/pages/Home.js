@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import '../styles/Home.css';
-import HomeImage from "../images/Home3.jpg";
+
 import Search from "../components/Search";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,7 +20,7 @@ const Home = () => {
         <div className='it' data-aos="fade-up" data-aos-delay="3000">IT</div>
             <div className="homeLeft" >
                 
-                <img src={HomeImage} alt="Home Image" className="homeImg" ></img>
+                <img src="/images/Home3.jpg" alt="Home Image" className="homeImg" ></img>
             </div>
             <div className="homeRight">
             <span class="bg__blur first_blur"></span>  
