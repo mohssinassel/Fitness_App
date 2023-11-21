@@ -27,12 +27,6 @@ const Search = () => {
           setFavorites(JSON.parse(storedFavorites));
         }
       }, []);
-      useEffect(() => {
-        const logFavoritesInterval = setInterval(() => {
-          console.log('Favorites:', favorites);
-        }, 2000);
-        return () => clearInterval(logFavoritesInterval);
-    }, [favorites]);
     let itemsPerPage = 6;
     const [pageNumber, setPageNumber] = useState(0);
     const startIndex = pageNumber * itemsPerPage;
@@ -52,11 +46,19 @@ const Search = () => {
         "/images/icons/cardio.png",
     ];
     const addToFavorites = (item) => {
-        setFavorites((prevFavorites) => {
-          const newFavorites = [...prevFavorites, item];
-          localStorage.setItem('favorites', JSON.stringify(newFavorites));
-          return newFavorites;
-        });
+        if(!favorites.includes(item)){
+            setFavorites((prevFavorites) => {
+            const newFavorites = [...prevFavorites, item];
+            localStorage.setItem('favorites', JSON.stringify(newFavorites));
+            return newFavorites;
+            });
+        }else{
+            setFavorites((prevFavorites) => {
+                const newFavorites = prevFavorites.filter((iteme) => iteme !== item);
+                localStorage.setItem('favorites', JSON.stringify(newFavorites));
+                return newFavorites;
+              });
+        }
       };
   
 
@@ -134,7 +136,6 @@ const Search = () => {
                             </NavLink>
                                 <div><p>{exercice.equipment} </p><MdFavorite    fill={favorites.includes(exercice) ? 'red' : 'white'} className="fav_logo"  onClick={() => addToFavorites(exercice)}/></div>
                                 <h3>{exercice.name}</h3>
-                            
                         </div>
                     ))}
                 </div>

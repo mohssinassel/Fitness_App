@@ -3,9 +3,6 @@ import '../styles/detail.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
-
-
 const Detail = ({ exerciseDetail }) => {
     useEffect(() => {
         AOS.init({

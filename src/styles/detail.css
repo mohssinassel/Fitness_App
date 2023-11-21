@@ -96,13 +96,19 @@
     z-index: 1;
     font-family: 'Montserrat', sans-serif;
   }
-
-  @media only screen and (max-width: 1300px) {
-    
-
-  }
   
   @media only screen and (max-width: 1000px) {
+    .detail-info > p{
+        font-size: 0.9rem;
+        
+    }
+    .detail-info::before ,.detail::before {
+        display: none;
+    }
+    .extra-detail-img-container{
+        width: 80px;
+        height: 80px;
+    }
     
   }
   @media only screen and (max-width: 400px) {
@@ -126,9 +132,7 @@
     .detail-info{
         width: 100%;
     }
-    .detail-info::before ,.detail::before {
-        display: none;
-    }
+    
     .detail-info > h1{
         font-size: 1.5rem;
         margin-top: 1rem;
